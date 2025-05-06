@@ -1,15 +1,13 @@
 function buildString(chars, frequencies) {
-    let str='';
-    for(let i=0;i<chars.length;i++){
-       
-      
+   let str='';
+   for(let i=0;i<chars.length;i++){
+    for(let j=0;j<frequencies[i];j++){
+   str+=chars[i]
+    }
     
-    }
-    for(let j=0;j<frequencies.length;j++){
-        str+=chars[j];
-    }
-    return str;
+   }
+   return str;
 }
 let chars=['a','b','c'];
-let frequencies=[2,3,1];
+let frequencies=[2,3,6];
 console.log(buildString(chars, frequencies))
