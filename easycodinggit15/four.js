@@ -1,3 +1,5 @@
+//in three divisible write excuse
+
 function threesExcuse(n) {
     let str="";
     for(let i=1;i<=n;i++){
